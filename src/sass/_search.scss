@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(59, 63, 59, 0.199);
+  letter-spacing: 0.03em;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.search-form {
+  max-width: 1200px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 15px;
+  // outline: green 2px solid;
+  text-align: center;
+}
+
+.input {
+  padding: 5px 10px;
+  min-width: 250px;
+  border: black 3px solid;
+  border-radius: 25px;
+}
+
+.input:hover {
+  border: rgb(11, 129, 11) 3px solid;
+}
+
+// .gallery-container {
+//   // outline: red 2px solid;
+//   max-width: 1200px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 20px 15px;
+// }
+
+// .gallery {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-left: -20px;
+// }
+
+// .gallery-item {
+//   flex-basis: calc((100% / 3 - 20px));
+//   margin-left: 20px;
+//   height: 100%;
+//   margin-bottom: 20px;
+// }
+
+// .photo-card {
+//   border: 2px solid red;
+//   flex-grow: 1;
+// }
+
+// img {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   object-fit: cover;
+//   margin-bottom: 10px;
+// }
+
+// .stats {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .gallery-container {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   grid-gap: 1em;
+//   padding: 15px;
+// }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px 20px;
+  padding: 15px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.photo-card {
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid rgba(0, 128, 0, 0.199);
+}
+
+.photo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(83, 85, 83, 0.274);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats-item {
+  display: flex;
+  padding: 10px;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
